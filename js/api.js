@@ -8,7 +8,7 @@ const api = {
             throw error
         }
     },
-
+    
     async salvarPensamento(pensamento) {
         try {
             const response = await fetch('http://localhost:3000/pensamentos', {
