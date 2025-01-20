@@ -1,3 +1,9 @@
 {
-  "pensamentos": []
+  "pensamentos": [
+    {
+      "id": "1b62",
+      "conteudo": "Estudando CRUD",
+      "autoria": "Dev Alberto"
+    }
+  ]
 }
