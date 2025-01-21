@@ -2,9 +2,27 @@
   "pensamentos": [
     {
       "id": "56fd",
-      "favorito": false,
+      "favorito": true,
       "conteudo": "Foi sem querer querendo",
       "autoria": "Chaves"
+    },
+    {
+      "id": "fb0d",
+      "favorito": false,
+      "conteudo": "SSSS",
+      "autoria": "Al"
+    },
+    {
+      "id": "afae",
+      "favorito": false,
+      "conteudo": "Que merda",
+      "autoria": "Jubileu"
+    },
+    {
+      "id": "ec41",
+      "conteudo": "aaaaaa",
+      "autoria": "aaaa",
+      "data": "2025-02-28"
     }
   ]
 }
