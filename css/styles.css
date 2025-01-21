@@ -294,7 +294,7 @@ h2, h3 {
   right: 16px;
 }
 
-.botao-editar, .botao-excluir {
+.botao-editar, .botao-excluir, .botao-favorito {
   background: none;
   border: none;
   cursor: pointer;
