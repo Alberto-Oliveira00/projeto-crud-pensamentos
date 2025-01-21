@@ -6,9 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const formularioPensamento = document.getElementById("pensamento-form")
     const btnCancelar = document.getElementById("botao-cancelar")
+    const inputBusca = document.getElementById("campo-busca")
 
     formularioPensamento.addEventListener("submit", manipularSubmissaoFormulario)
     btnCancelar.addEventListener("click", manipularCancelamento)
+    inputBusca.addEventListener("input", manipularBusca)
 })
 
 async function manipularSubmissaoFormulario(event) {
@@ -32,4 +34,14 @@ async function manipularSubmissaoFormulario(event) {
 
 function manipularCancelamento() {
     ui.limparFormulario()
+}
+
+async function manipularBusca () {
+    const termoBusca = document.getElementById("campo-busca").value
+    try {
+        const pensamentosFiltrados = await api.buscarPensamentoPorTermo(termoBusca)
+        ui.renderizarPensamentos(pensamentosFiltrados)
+    } catch (error) {
+        alert("Erro ao realizar busca")
+    }
 }
