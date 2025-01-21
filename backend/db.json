@@ -34,6 +34,19 @@
       "conteudo": "Testando Formato de DATE",
       "autoria": "CHATGPT",
       "data": "2025-01-03"
+    },
+    {
+      "id": "62fc",
+      "conteudo": "Você faz TI, conserta o meu computador",
+      "autoria": "Amigo",
+      "data": "2025-01-10",
+      "favorito": false
+    },
+    {
+      "id": "db1d",
+      "conteudo": "Novo teste data",
+      "autoria": "teste",
+      "data": "2025-02-10T00:00:00.000Z"
     }
   ]
 }
