@@ -4,25 +4,36 @@
       "id": "56fd",
       "favorito": true,
       "conteudo": "Foi sem querer querendo",
-      "autoria": "Chaves"
+      "autoria": "Chaves",
+      "data": "2025-01-01T12:00:00Z"
     },
     {
       "id": "fb0d",
       "favorito": false,
       "conteudo": "SSSS",
-      "autoria": "Al"
+      "autoria": "Al",
+      "data": "2025-01-02T12:00:00Z"
     },
     {
       "id": "afae",
       "favorito": false,
       "conteudo": "Que merda",
-      "autoria": "Jubileu"
+      "autoria": "Jubileu",
+      "data": "2025-01-03T12:00:00Z"
     },
     {
       "id": "ec41",
+      "favorito": false,
       "conteudo": "aaaaaa",
       "autoria": "aaaa",
-      "data": "2025-02-28"
+      "data": "2025-01-04T12:00:00Z"
+    },
+    {
+      "id": "d9d8",
+      "favorito": false,
+      "conteudo": "Testando Formato de DATE",
+      "autoria": "CHATGPT",
+      "data": "2025-01-03"
     }
   ]
 }
