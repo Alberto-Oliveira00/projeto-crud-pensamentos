@@ -1,8 +1,23 @@
 import ui from "./ui.js"
 import api from "./api.js"
 
+const pensamentosSet = new Set()
+
+async function adicionarChaveAoPensamento() {
+    try {
+        const pensamentos = await api.buscarPensamentos()
+        pensamentos.forEach(pensamento => {
+            const chavePensamento =
+            `${pensamento.conteudo.trim().toLowerCase()}-${pensamento.autoria.trim().toLowerCase()}`
+            pensamentosSet.add(chavePensamento)
+        })
+    } catch (error) {
+        alert("Erro ao adicionar chave ao pensamento")
+    }
+}
+
 const regexConteudo = /^[A-Za-z\s]{10,}$/
-const regexAutoria = /^[A-Za-z]{3, 15}$/
+const regexAutoria = /^[A-Za-z]{3,15}$/
 
 function validarConteudo(conteudo) {
     return regexConteudo.test(conteudo)
@@ -14,6 +29,7 @@ function validarAutoria(autoria) {
 
 document.addEventListener("DOMContentLoaded", () => {
     ui.renderizarPensamentos()
+    adicionarChaveAoPensamento()
 
     const formularioPensamento = document.getElementById("pensamento-form")
     const btnCancelar = document.getElementById("botao-cancelar")
@@ -38,13 +54,20 @@ async function manipularSubmissaoFormulario(event) {
     }
 
     if (!validarAutoria(autoria)){
-        alert("Na autoria é permitido apenas a inclusão de letras sem espaço com no mínimo 3 e no máximo de 15 caracteres")
-        autoria.focus()
+        alert("Na autoria é permitido apenas a inclusão de letras com no mínimo 3 e no máximo de 15 caracteres")
         return
     }
 
     if(!validarData(data)) {
         alert("Não é permitido o cadastro de datas futuras. Selecione outra data.")
+    }
+
+    const chaveNovoPensamento = 
+    `${conteudo.toLowerCase()}-${autoria.trim().toLowerCase()}`
+
+    if(pensamentosSet.has(chaveNovoPensamento)) {
+        alert("Esse pensamento já existe")
+        return
     }
 
     try {
