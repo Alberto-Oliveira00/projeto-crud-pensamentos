@@ -16,8 +16,8 @@ async function adicionarChaveAoPensamento() {
     }
 }
 
-const regexConteudo = /^[A-Za-z\s]{10,}$/
-const regexAutoria = /^[A-Za-z]{3,15}$/
+const regexConteudo = /^[A-Za-zÀ-ÿçÇ\s',-]{10,}$/
+const regexAutoria = /^[A-Za-zÀ-ÿçÇ\s'-]{2,15}$/
 
 function validarConteudo(conteudo) {
     return regexConteudo.test(conteudo)
@@ -54,12 +54,13 @@ async function manipularSubmissaoFormulario(event) {
     }
 
     if (!validarAutoria(autoria)){
-        alert("Na autoria é permitido apenas a inclusão de letras com no mínimo 3 e no máximo de 15 caracteres")
+        alert("Na autoria é permitido apenas a inclusão de letras com no mínimo 2 e no máximo de 15 caracteres")
         return
     }
 
     if(!validarData(data)) {
         alert("Não é permitido o cadastro de datas futuras. Selecione outra data.")
+        return
     }
 
     const chaveNovoPensamento = 

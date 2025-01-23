@@ -8,31 +8,9 @@
       "data": "2025-01-01T12:00:00Z"
     },
     {
-      "id": "fb0d",
-      "conteudo": "O pai é pica",
-      "autoria": "Bebeto",
-      "data": "2025-01-21",
-      "favorito": true
-    },
-    {
-      "id": "afae",
-      "favorito": false,
-      "conteudo": "Que merda",
-      "autoria": "Jubileu",
-      "data": "2025-01-03T12:00:00Z"
-    },
-    {
-      "id": "ec41",
-      "favorito": false,
-      "conteudo": "aaaaaa",
-      "autoria": "aaaa",
-      "data": "2025-01-04T12:00:00Z"
-    },
-    {
       "id": "d9d8",
-      "favorito": false,
       "conteudo": "Testando Formato de DATE",
-      "autoria": "CHATGPT",
+      "autoria": "Alberto",
       "data": "2025-01-03"
     },
     {
@@ -43,16 +21,29 @@
       "favorito": false
     },
     {
-      "id": "db1d",
-      "conteudo": "Novo teste data",
-      "autoria": "teste",
-      "data": "2025-02-10T00:00:00.000Z"
+      "id": "1d42",
+      "conteudo": "Na minha maquina funciona",
+      "autoria": "Dev",
+      "data": "2025-01-02T00:00:00.000Z"
     },
     {
-      "id": "fa8b",
-      "conteudo": "Se eu for ai e achar",
+      "id": "4ada",
+      "conteudo": "Na volta a gente compra",
       "autoria": "Mãe",
-      "data": "2024-07-18"
+      "data": "2025-01-15T00:00:00.000Z",
+      "favorito": true
+    },
+    {
+      "id": "7252",
+      "conteudo": "Não contavam com minha astúcia",
+      "autoria": "Chapolin",
+      "data": "2025-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "1ab0",
+      "conteudo": "A vingança nunca é plena, mata a alma e envenena",
+      "autoria": "Seu Madruga",
+      "data": "2025-01-02T00:00:00.000Z"
     }
   ]
 }

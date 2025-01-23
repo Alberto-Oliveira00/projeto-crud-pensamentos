@@ -92,6 +92,12 @@ footer {
   left: 0;
 }
 
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--Baby-blue);
+}
+
 h2, h3 {
   color: var(--Azul-Dark, #041832);
   text-align: center;
