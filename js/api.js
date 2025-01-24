@@ -1,4 +1,4 @@
-const URL_BASE = "http://localhost:3000"
+const URL_BASE = "https://alberto-oliveira00.github.io/projeto-crud-pensamentos"
 
 const converterStringParaData = (dataString) => {
     const [ano, mes, dia] = dataString.split("-")
